@@ -1,9 +1,10 @@
-import AnswersItem from "./AnswersItem";
+import AnswersItem from "./AnswersItem"
 
-export default function AnswersList(props) {
-  console.log("Inside AnswersList: ", props);
+export function AnswersList(props) {
+  console.log("Inside AnswersList: ", props)
 
-  const { answersList } = props;
+  const { answersList } = props
+  console.log(props)
 
   return (
     <ul>
@@ -11,5 +12,5 @@ export default function AnswersList(props) {
         <AnswersItem answerItem={answerItem} key={i} />
       ))}
     </ul>
-  );
+  )
 }
